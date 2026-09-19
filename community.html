@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>커뮤니티 | 미디독학고수</title>
+<link rel="icon" href="assets/logo-in.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand"><img src="assets/logo-in-dark.png" alt="MDG 로고"><span>미디독학고수</span></a>
+    <nav class="main-nav">
+      <a href="intro.html">소개</a>
+      <a href="curriculum.html">커리큘럼</a>
+      <a href="classes.html">강의</a>
+      <a href="community.html">커뮤니티</a>
+      <a href="pricing.html">가격</a>
+    </nav>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-ghost btn-sm">로그인</a>
+      <a href="signup.html" class="btn btn-primary btn-sm">회원가입</a>
+    </div>
+    <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-nav">
+    <a href="intro.html">소개</a>
+    <a href="curriculum.html">커리큘럼</a>
+    <a href="classes.html">강의</a>
+    <a href="community.html">커뮤니티</a>
+    <a href="pricing.html">가격</a>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-ghost">로그인</a>
+      <a href="signup.html" class="btn btn-primary">회원가입</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero container">
+    <span class="eyebrow" style="justify-content:center;">Community</span>
+    <h1>혼자가 아닌, <span class="gradient-text">함께</span> 성장하는 공간</h1>
+    <p>질문하고, 답하고, 서로의 작업물을 나누며 빠르게 성장해 보세요.</p>
+  </section>
+
+  <section class="py container">
+    <div class="community-toolbar">
+      <div class="filter-bar" style="margin:0;">
+        <button class="filter-btn active" data-filter="all">전체</button>
+        <button class="filter-btn" data-filter="qna">질문해요</button>
+        <button class="filter-btn" data-filter="share">정보공유</button>
+        <button class="filter-btn" data-filter="review">후기</button>
+      </div>
+      <a href="#" class="btn btn-primary btn-sm" onclick="return mockSubmit(event, '로그인 후 글쓰기가 가능합니다. (데모에서는 동작하지 않습니다)');">글쓰기</a>
+    </div>
+
+    <div class="post-list">
+
+      <div class="post-row" data-category="qna">
+        <span class="post-cat hot">HOT · 질문해요</span>
+        <div class="post-main">
+          <div class="post-title">화성학 3단계까지 들었는데 대리화음이 헷갈려요</div>
+          <div class="post-excerpt">2-5-1 진행에서 대리화음을 쓰는 기준이 궁금합니다. 곡에 따라 다르게 써야 하나요?</div>
+        </div>
+        <div class="post-stats"><span>💬 12</span><span>❤ 8</span><span>👁 231</span></div>
+        <div class="post-info">2026.09.18 · 하늘</div>
+      </div>
+
+      <div class="post-row" data-category="share">
+        <span class="post-cat">정보공유</span>
+        <div class="post-main">
+          <div class="post-title">퓨쳐베이스 킥 사운드 디자인 팁 공유합니다</div>
+          <div class="post-excerpt">레이어링할 때 쓰는 EQ 포인트 몇 가지 정리해봤어요. 참고하세요!</div>
+        </div>
+        <div class="post-stats"><span>💬 6</span><span>❤ 24</span><span>👁 402</span></div>
+        <div class="post-info">2026.09.17 · 은재</div>
+      </div>
+
+      <div class="post-row" data-category="review">
+        <span class="post-cat">후기</span>
+        <div class="post-main">
+          <div class="post-title">프로준비 클래스 6개 프로젝트 완주 후기</div>
+          <div class="post-excerpt">막막했던 편곡 구간을 이제는 스스로 풀어낼 수 있게 됐어요. 정말 감사합니다!</div>
+        </div>
+        <div class="post-stats"><span>💬 21</span><span>❤ 45</span><span>👁 689</span></div>
+        <div class="post-info">2026.09.16 · 대영</div>
+      </div>
+
+      <div class="post-row" data-category="qna">
+        <span class="post-cat">질문해요</span>
+        <div class="post-main">
+          <div class="post-title">신스웨이브 특강 예제 파일에서 신디사이저 프리셋 이름이 궁금해요</div>
+          <div class="post-excerpt">강의에서 쓰신 패드 프리셋이 기본 내장인지 서드파티인지 알 수 있을까요?</div>
+        </div>
+        <div class="post-stats"><span>💬 4</span><span>❤ 5</span><span>👁 120</span></div>
+        <div class="post-info">2026.09.15 · 재윤</div>
+      </div>
+
+      <div class="post-row" data-category="share">
+        <span class="post-cat hot">HOT · 정보공유</span>
+        <div class="post-main">
+          <div class="post-title">18개 장르 정복 진행표 만들어봤어요 (양식 공유)</div>
+          <div class="post-excerpt">커리큘럼 순서대로 체크할 수 있는 표를 만들었는데 필요하신 분 댓글 남겨주세요.</div>
+        </div>
+        <div class="post-stats"><span>💬 33</span><span>❤ 61</span><span>👁 855</span></div>
+        <div class="post-info">2026.09.14 · 미디초보</div>
+      </div>
+
+      <div class="post-row" data-category="review">
+        <span class="post-cat">후기</span>
+        <div class="post-main">
+          <div class="post-title">보컬 전공자인데 작곡 시작해도 될까요? (수강 후기)</div>
+          <div class="post-excerpt">전공이 달라도 기초부터 차근차근 알려주셔서 따라가는 데 문제 없었습니다.</div>
+        </div>
+        <div class="post-stats"><span>💬 9</span><span>❤ 17</span><span>👁 310</span></div>
+        <div class="post-info">2026.09.12 · 최주비</div>
+      </div>
+
+      <div class="post-row" data-category="qna">
+        <span class="post-cat">질문해요</span>
+        <div class="post-main">
+          <div class="post-title">1년 구독 혜택으로 받은 건반, 초보자가 쓰기에 괜찮나요?</div>
+          <div class="post-excerpt">미니 건반 사이즈가 궁금합니다. 25건반인가요 49건반인가요?</div>
+        </div>
+        <div class="post-stats"><span>💬 3</span><span>❤ 2</span><span>👁 88</span></div>
+        <div class="post-info">2026.09.10 · 뉴비프로듀서</div>
+      </div>
+
+    </div>
+
+    <div class="pagination">
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="assets/logo-in-dark.png" alt="MDG 로고"><span>미디독학고수</span></a>
+        <p>10년 이상의 미디독학 경험과 현업 K-POP 작곡가의 노하우를 그대로 전수하는 작곡·프로듀싱 동영상 레슨 사이트입니다.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h5>클래스</h5><ul><li><a href="curriculum.html">커리큘럼</a></li><li><a href="classes.html">전체 강의</a></li><li><a href="pricing.html">가격/구독</a></li></ul></div>
+        <div class="footer-col"><h5>소통</h5><ul><li><a href="community.html">커뮤니티</a></li><li><a href="intro.html">강사 소개</a></li></ul></div>
+        <div class="footer-col"><h5>계정</h5><ul><li><a href="login.html">로그인</a></li><li><a href="signup.html">회원가입</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="biz-info">
+        미디독학고수 | 대표: 박정진 | 사업자등록번호: 667-13-02043 | 주소: 서울특별시 중랑구 봉화산로 194, 3층 369-193호(신내동, 신아타운) | 이메일: jjhg753@gmail.com<br>
+        © 2026 MDG(미디독학고수). All rights reserved. 이 사이트는 데모(시안) 목적으로 제작되었으며 실제 결제/로그인 기능은 동작하지 않습니다.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
